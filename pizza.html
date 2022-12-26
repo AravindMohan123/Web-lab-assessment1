@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <style>
+    .container{
+
+        width:500px;
+        height:800px;
+        border: 2px dashed;
+        border-color:green;
+        box-shadow: 9px 9px 12px 5px;
+        background-color: antiquewhite;
+    }
+    #headr{
+        color:black;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+        position: relative;
+        top: 80px;
+
+    }
+    #piz1{
+
+        color:chocolate;
+
+        position:relative;
+
+    }
+    #elem{
+position:relative;
+border:2px solid;
+margin-top: 35%;
+width:100%;
+
+    }
+    #fname{
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid;
+        width:50%;
+        
+    }
+    #validate{
+
+        width:95px;
+        height:25px;
+        border-radius:40%;
+        box-shadow: 9px 9px 12px 5px grey,-9px -9px 12px 5px whitesmoke;
+        background-color: burlywood;
+        
+
+    }
+    span{
+color:red;
+
+
+
+    }
+    #nextp{
+
+        display:none;
+
+    }
+    body{
+
+background-image: linear-gradient(orange,green);
+
+    }
+   </style>
+</head>
+<body>
+   <center> 
+    <div class="container">
+<span id="headr">Pizza Hut</span>
+<marquee id="piz1">order your pizzas with a smile!!!</marquee>
+<div id="elem">
+<label>Full name   :</label><input type="text" placeholder="Full name" id="fname"><br><br>
+<span id="sp1">*abc</span>
+
+
+<br>
+
+<label>Address  :</label>  <textarea id="txtar"></textarea><br><br><span id="sp2">*abc</span><br><br>
+<label><u>order type   :</u></label><br>Delivery:<input type="radio" name="ot" id="otype">Take Away:<input type="radio" name="ot" id="otype1"><br><br><span id="sp3">*abc</span><br><br>
+<label>Pizza size  :</label><select name="ordertype" id="sel">
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+
+
+</select>
+<br><br><br><br>
+
+<u style="color:green"><label>Additional Toppings:</label></u><br><br>
+Pepper<input type="checkbox" id="ch1" name="chilly"> &nbsp;&nbsp;&nbsp;Chilli-sauce<input type="checkbox" id="ch2" name="chilly">&nbsp;&nbsp;&nbsp;Sweet corn<input type="checkbox" id="ch1" name="chilly">
+
+    
+</div><br>
+<br>
+<br>
+
+<br>
+<button id="validate" onclick="check()">Submit</button>
+</div>
+<a id="nextp" href="submit.html"> </a>
+</center>
+<script type="text/javascript" src="validate.js"></script>
+</body>
+</html>
