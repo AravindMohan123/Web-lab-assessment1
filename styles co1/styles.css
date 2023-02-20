@@ -1,0 +1,103 @@
+#bodyset1{
+
+    position: absolute;
+    left:0%;
+    top:0%;
+    width:100%;
+    height:70%;
+    background-image: linear-gradient(aquamarine,white);
+
+
+
+}
+
+#bodyset2{
+
+
+    position: absolute;
+    left:0%;
+    top:10%;
+    width:100%;
+    height:90%;
+    
+
+
+
+
+
+}
+
+#cars{
+
+    position:relative;
+    left:0%;
+    width:5%;
+    height:10%;
+    background-color: yellow;
+    transition:linear 0.5s;
+    margin-top:10%;
+    
+
+}
+#scooters{
+    position:relative;
+    left:0%;
+    width:5%;
+    height:10%;
+    background-color: yellow;
+    transition:linear 0.5s;
+    margin-top:5%;
+
+}
+#bikes{
+
+    position:relative;
+    left:0%;
+    width:5%;
+    height:10%;
+    background-color: yellow;
+    transition:linear 0.5s;
+    margin-top:5%;
+    box-shadow:5px 10px 8px 7px black;
+
+}
+
+
+#bikes:hover{
+
+    width:35%;
+    display:flex;
+    justify-content: center;
+    padding:5px;
+    font-size: 2em;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+
+
+}
+#scooters:hover{
+
+
+    width:35%;
+    display:flex;
+    justify-content: center;
+    padding:5px;
+    font-size: 2em;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cars:hover{
+
+    width:35%;
+    display:flex;
+    justify-content: center;
+    padding:5px;
+    font-size: 2em;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}

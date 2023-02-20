@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+#container{
+  
+    margin-top: 55px;
+   margin-left:10px;
+    padding: 10px;
+    width:650px;
+    height:600px;
+
+    border-radius: 22px;background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  32px 32px 38px #130f0f,
+             -32px -32px 38px #080808;
+
+opacity:0.6;
+}
+
+.str{
+
+    appearance:none;
+    border:none;
+    outline:none;
+    background-color: transparent ;
+    border-bottom:1px solid;
+    width: 250px;
+    
+   
+}
+.formn{
+
+align-content: center;
+
+}
+input{
+padding-top: 10px;
+
+
+}
+.sts{
+
+font-size: larger;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+width:250px;
+appearance:none;
+border:none;
+outline: none;
+background-color: transparent;
+border-bottom: 1px solid;
+
+
+}
+
+
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  bottom:2px;
+  opacity:1;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.validater{
+
+color:red;
+font-size:smaller;
+display:none;
+
+
+}
+
+
+body{
+  background-image: url(coffee.webp);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+   </style>
+</head>
+<body>
+  
+    <div id="container">
+    <h1><center><u>Registration form</u></center></h1>
+    <div id="page_set">
+    
+        <br><label for="inp1"><b>Name</b></label> <input placeholder="full name" type="text" class="str" id="inp1"><span  class="validater">validate</span><br>
+        <br><span ><b>Email:</b></span><input placeholder="mail id" type="email" class="str" id="inp2"><span class="validater">validate</span><br>
+        <br><span><b>Password:</b></span><input placeholder="password" type="password" class="str" id="inp3"><span class="validater">validate</span><br>
+        <span><b>Confirm Password:</b></span><input placeholder="Re-enter the password" type="password" class="str" id="inp4"><span class="validater">validate</span><br>
+        <br><span><b>Gender:</b></span><br><input type="radio" id="rd1"  class="op" name="gn" >:male<input type="radio" id="rd21" class="op" name="gn">:female<span class="validater">validate</span><br>
+        <br><span><b>Mobile number:</b></span>&nbsp;<select><option>+91</option></select><input type="number" placeholder="please enter mob number" class="str" id="inp5"><span class="validater">validate</span><br><br><br><span>State:</span> <select class="sts">
+            <Option>Kerala</Option>
+            <Option>Tamil Nadu</Option>
+            <Option>Karnataka</Option>
+            <Option>Assam</Option>
+            <Option>Arunachal</Option>
+            <Option>Maharashtra</Option>
+            <Option>Goa</Option>
+            <Option>Mizoram</Option>
+        
+        </select><br><br>
+        <br><label for=""><b>Message in  </b> :</label><input type="checkbox" value="check">hangouts <input type="checkbox" value="check">Whatsapp <input type="checkbox" value="check">facebook<br>
+       <br><br> <label for=""><b>Address  :</b></label><textarea placeholder="address" style="width:200px;height:65px;"> </textarea><span class="validater">validate</span><br><br>
+        <br><center>
+          <button onclick ="verify_sub()"class="button-30" role="button">Submit</button>
+          </center>
+
+
+    
+        </div>
+        <script src="tests.js"></script>
+</body>
+</html>
